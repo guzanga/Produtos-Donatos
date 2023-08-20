@@ -1,0 +1,188 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+  
+*::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+    padding: 2px;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid black;    /* color of the scroll thumb */
+    border-radius: 20px;  
+}
+
+.tarefa{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    gap: 8px;
+    margin: 12px;
+}
+
+
+#novaTarefa{
+    display: block;
+    height: 400px;
+    overflow: auto;
+    width: max-content;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/pngtree-green-watercolor-plant-background-image_499339.jpg);
+    background-size: 500px;
+}
+
+.a{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 15px;
+    border: 4px solid black;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.183) 15px 15px 15px;
+    background-color: white;
+}
+
+.a t{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#criar{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid rgb(34, 122, 215);
+    color: black;
+}
+
+.input{
+    border: 1.7px solid black;
+    box-shadow: rgba(0, 0, 0, 0.183) 3px 3px 3px;
+    outline: none;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.spanh1{
+    color: rgb(34, 122, 215);
+}
+
+
+.deletar{
+    border: 2px solid red;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+    color: red;
+
+}
+
+input[type="checkbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 5px;
+    display: inline-block;
+    appearance: none;
+    position: relative;
+    background-color: #F2ECFF;
+    border-radius: 15%;
+    cursor: pointer;
+    overflow: hidden;
+   }
+   
+   input[type="checkbox"]::after {
+    content: '';
+    display: block;
+    height: 0.9rem;
+    width: .4rem;
+    border-bottom: .31rem solid #a0ffe7;
+    border-right: .31rem solid #a0ffe7;
+    opacity: 0;
+    transform: rotate(45deg) translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    transition: .25s ease;
+   }
+   
+   input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    background-color: #00C896;
+    border-radius: 50%;
+    opacity: .5;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .3s ease;
+   }
+   
+   input[type="checkbox"]:checked::before {
+    height: 130%;
+    width: 130%;
+    opacity: 100%;
+   }
+   
+   
+
+   #expor{
+    width: fit-content;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid rgb(34, 122, 215);
+    color: black;
+   }
+
+   button{
+    border: 2px solid #09dd09;
+    border-radius: 7px;
+    background-color: white;
+    color: #09dd09;
+   }
+
+   #edita{
+    border: 2px solid #A628B4;
+    border-radius: 7px;
+    background-color: white;
+    color: #A628B4;
+   }
+
+    #id_novadiv{
+        display: flex;
+
+    }
+
+
+
+
+   @media screen and (max-width: 800px) {
+        #id_novadiv{
+            display: flex;
+            flex-direction: column;
+        }
+        #id_mostra{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
+  
